@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./Snake.css">
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        <title>Snake Game</title>
+    </head>
+    <body id="body">
+        <div id="spacing"></div>
+        <div id="header">
+            <p id="title"><b>Snake Game</b></p>
+            <p title="Instructions" id="instructions">
+                Press the start button to start the game. Use the arrow keys or wasd to change the snake's direction,
+                do not crash into the walls or your own tail. Eat the dots to grow longer.
+            </p>
+        </div>
+        <div id="start">
+            <button title="start or restart the game" id="button">Start Game</button>
+        </div>
+        <div id="game" style="display:none;">
+            <span id="label">Score: </span><span id="score">0</span>
+            <canvas id="canvas" width="700" height="500">Failed to load game</canvas>
+            <div id="close_frame">
+                <button title="close the game (you can open it again)" id="close">Close</button>
+            </div>
+        </div>
+        <script src="./Snake.js"></script>
+    </body>
+</html>
